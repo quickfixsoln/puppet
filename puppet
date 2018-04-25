@@ -15,3 +15,10 @@ agent:
  foreman:
  
    https://www.digitalocean.com/community/tutorials/how-to-use-foreman-to-manage-puppet-nodes-on-ubuntu-14-04
+   
+   
+sudo sh -c 'echo "deb http://deb.theforeman.org/ trusty 1.5" > /etc/apt/sources.list.d/foreman.list' && \
+sudo sh -c 'echo "deb http://deb.theforeman.org/ plugins 1.5" >> /etc/apt/sources.list.d/foreman.list' && \
+wget -q http://deb.theforeman.org/pubkey.gpg -O- | sudo apt-key add - && \
+sudo apt-get update && sudo apt-get install foreman-installer && \
+sudo foreman-installer && \
