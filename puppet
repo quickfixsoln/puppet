@@ -21,4 +21,4 @@ sudo sh -c 'echo "deb http://deb.theforeman.org/ trusty 1.5" > /etc/apt/sources.
 sudo sh -c 'echo "deb http://deb.theforeman.org/ plugins 1.5" >> /etc/apt/sources.list.d/foreman.list' && \
 wget -q http://deb.theforeman.org/pubkey.gpg -O- | sudo apt-key add - && \
 sudo apt-get update && sudo apt-get install foreman-installer && \
-sudo foreman-installer && \
+sudo foreman-installer
