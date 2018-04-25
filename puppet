@@ -1,0 +1,17 @@
+
+
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb && \
+    sudo dpkg -i puppetlabs-release-trusty.deb && \
+    sudo apt-get update -yq && sudo apt-get upgrade -yq && \
+    sudo apt-get install -yq puppetmaster
+
+
+
+agent:
+
+ sudo apt-get install -yq puppet
+ 
+ 
+ foreman:
+ 
+   https://www.digitalocean.com/community/tutorials/how-to-use-foreman-to-manage-puppet-nodes-on-ubuntu-14-04
