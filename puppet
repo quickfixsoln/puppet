@@ -1,4 +1,8 @@
 
+puppetmaster4:
+
+  https://www.digitalocean.com/community/tutorials/how-to-install-puppet-4-in-a-master-agent-setup-on-ubuntu-14-04
+
 
 wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb && \
     sudo dpkg -i puppetlabs-release-trusty.deb && \
