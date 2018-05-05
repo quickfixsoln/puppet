@@ -6,16 +6,16 @@ https://apt.puppetlabs.com/
 
 debrepo:
 
-https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb && \
 
-dpkg -i puppetlabs-release-pc1-trusty.deb
+dpkg -i puppetlabs-release-pc1-trusty.deb && \
 
-apt-get update
+apt-get update && \
 
-apt-get install puppet-agent puppetserver
+apt-get install puppet-agent puppetserver && \
 
 
-puppet resource service pupperserver ensure=running
+puppet resource service pupperserver ensure=running && \
 
 puppet resource service pupperserver enable=true
 
