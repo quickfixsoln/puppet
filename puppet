@@ -5,12 +5,12 @@ https://linoxide.com/tools/setup-foreman-manage-puppet-nodes-ubuntu-16-04/
 
 ######################puppet server stanadlone ##############
 https://www.digitalocean.com/community/tutorials/how-to-install-puppet-4-on-ubuntu-16-04
-  
-    curl -O https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
-    sudo dpkg -i puppetlabs-release-pc1-xenial.deb
-    sudo apt-get update
-
-   sudo apt-get install puppetserver
+     export LC_ALL="en_US.UTF-8" && \
+     export LC_CTYPE="en_US.UTF-8" && \
+    curl -O https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb && \
+    sudo dpkg -i puppetlabs-release-pc1-xenial.deb && \
+    sudo apt-get update && \
+    sudo apt-get install puppetserver 
 
    sudo vi /etc/default/puppetserver
          JAVA_ARGS="-Xms512m -Xmx512mb -XX:MaxPermSize=256m"
